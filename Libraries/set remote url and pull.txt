@@ -1,0 +1,2 @@
+git remote set-url --pull origin https://github.com/username/Project
+git remote set-url --pull master https://github.com/username/Project

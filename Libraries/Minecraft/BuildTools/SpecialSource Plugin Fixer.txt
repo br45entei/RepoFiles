@@ -1,0 +1,1 @@
+java -jar BuildData/bin/SpecialSource-2.jar map -m CraftBukkit/deprecation-mappings.csrg -i MyPlugin.jar -o MyPlugin-fixed.jar

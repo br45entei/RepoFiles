@@ -1,0 +1,23 @@
+how to do a new project with repo on github:
+
+1. Make the repo on GitHub.
+2. Create a new Java project in eclipse in the workspace where it will be worked on, but make the folder stay in the Git folder
+	and make sure it is a Java project, not just project etc
+3. Open git bash and cd to the new folder just created by eclipse (cd <hittab>)
+4. run "git init"
+5. run "git remote add origin https://github.com/Joapple/My-Project" replacing the My-Project with the case sensitive name of project on repo, 
+	should also match the folder from eclipse for best results etc
+6. Now, almost done, run "git pull origin master" and that will pull all the files from git to the eclipse folder.
+7. (Optional I think) open git desktop app and check to see if the repo shows up, if not, don't worry about it
+8. Open eclipse again, then right click on the project(it will still be blank with no changes at this point) and
+	do Team --> "Share Project..." and just click finish, don't edit any settings here!
+9. Let eclipse derp out for as long as it need to, once done, you should either end up with build path errors to fix if making repo from scratch,
+	or you don't have the libraries in place etc, or you will have a happy little repo sitting in eclipse ready to go. At this point,
+	after any errors are fixed, you're up-to-date with upstream or even ahead now that you've changed settings etc to fix things. 
+	Now you can code and change stuff, then once done:
+10. Refresh the project in eclipse to ensure background eclipsy stuff is done, then do Team --> "Commit..." and a new window will show up
+	on the bottom of the tab windows next to console and problems tabs. Leave it there etc, in this window there is the first commit
+	file list and the staged files, to make sure you actually upload all changed files, before committing, right click the entire repo in eclipse
+	and do Team --> "Add to index". If done correctly, you'll see the unstaged files move down a window into the staged files list.
+	Now you're ready to enter commit description(I don't see the message part, so shrug lol). Then press "Commit and push" button, and let it work.
+11. Profit???
