@@ -1,0 +1,3 @@
+﻿.replaceAll("(?i)" + Pattern.quote("shrug"), Matcher.quoteReplacement("¯\\_(ツ)_/¯"))
+.replaceAll("(?i)" + Pattern.quote("gibe"), Matcher.quoteReplacement("༼ つ ◕_◕ ༽つ").replace(" ", ""))
+.replaceAll("(?i)" + Pattern.quote("tableflip"), Matcher.quoteReplacement("(╯°□°)╯︵ ┻━┻"))

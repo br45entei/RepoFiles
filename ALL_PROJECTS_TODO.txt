@@ -1,0 +1,34 @@
+# If you edit this file, please be sure whatever you're adding or editing is in the appropriate
+# section. If no section exists for it, make one, but only if it's really needed etc.
+
+===== Server plugin related issues =====
+
+KillCmd.java --> Working for Brian_Entei on local spigot 1.11.2 test server with minimal plugins
+	installed, but apparently not working in "real" server environment containing things like VT
+	and other plugins that can interfere, so this needs looking into...
+
+===== SlimeFun4 =====
+
+Entire project needs a thorough looking through to be sure no silly coding mistakes are present,
+	be them from us working on it or from the original plugin developers. We're only human! Assume
+	nothing!
+
+Machines are not working at this time, this needs looking into.
+
+Need to finish separating cargo tick nodes from other tickable slimefun blocks/machines, but before
+	this can be achieved, we need to first figure out how the heck SlimeFun4 handles and schedules
+	tick rates.
+
+Once cargo tick nodes and machines are fixed, we(?) need to begin optimizing SlimeFun4's cargo tick()
+	method, as it takes up waaay too much time of the spigot server tick time. This will be done by
+	moving all non-bukkit API crucial code from the server tick thread and into a background thread
+	that will handle memory operations and list sorting/management. The background thread will send
+	volatile flags and signals to another class that will be doing the cargo tick() method on the
+	server thread, so the server thread will ONLY be doing what it needs to, and nothing more.
+	This will need to be thought through carefully and done right the FIRST time. Otherwise, all
+	bets are off and any number of issues can pop up from this. If done properly, this should last
+	the life of this plugin and not need much updating except to maybe add new features, and that
+	will need to be done carefully should that ever become necessary.
+
+===== <New Section> =====
+
