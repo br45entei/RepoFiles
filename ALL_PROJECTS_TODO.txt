@@ -30,5 +30,12 @@ Once cargo tick nodes and machines are fixed, we(?) need to begin optimizing Sli
 	the life of this plugin and not need much updating except to maybe add new features, and that
 	will need to be done carefully should that ever become necessary.
 
+===== TE-UniversalEnchant =====
+
+We need to fix the durability when changing tool, meaning if it's a Diamond Pick and changing to
+	shears, durability need to be recalculated. We can work in % here to make it easier.
+	We also need to add leaves to shear tool instead of axe, maybe it's only a config thing,
+	I didn't test yet.
+	
 ===== <New Section> =====
 
