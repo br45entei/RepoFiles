@@ -37,7 +37,7 @@ We need to fix the durability when changing tool, meaning if it's a Diamond Pick
 	We also need to add leaves to shear tool instead of axe, maybe it's only a config thing,
 	I didn't test yet.
 	
-===== <New Section> =====
+===== JoPlugin =====
 
 JoPlugin, add a timetrials resetall command, should be easy, but i keep forgetting that. We also need to
 	replace the particles for the itemdrop stuff, the one we currently have is broken in 1.11
