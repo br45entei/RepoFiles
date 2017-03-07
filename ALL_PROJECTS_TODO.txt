@@ -41,6 +41,9 @@ We need to fix the durability when changing tool, meaning if it's a Diamond Pick
 
 JoPlugin, add a timetrials resetall command, should be easy, but i keep forgetting that. We also need to
 	replace the particles for the itemdrop stuff, the one we currently have is broken in 1.11
+
+Remove the /warp netherportal and add a way like multiverse does, tp that players doesn't have any way
+	except entering a netherportal.
 	
 ===== JoMergeMobs =====
 
