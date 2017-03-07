@@ -42,6 +42,24 @@ We need to fix the durability when changing tool, meaning if it's a Diamond Pick
 JoPlugin, add a timetrials resetall command, should be easy, but i keep forgetting that. We also need to
 	replace the particles for the itemdrop stuff, the one we currently have is broken in 1.11
 	
-	
+===== JoMergeMobs =====
+
+I want to replace the mergedmob plugin that is already loaded on the server, because it contains bug
+	that I can't fix. Plugin is obfuscated, we'll need to start from scratch. I want to merge mobs
+	by listing them in the config file, having an option to load by worlds. We can refer to the merged
+	mob config file and start from there.
+	Ex: Config
+	Mobs:
+  	CHICKEN:
+   	 alias: "Chickens"
+    	 radius: 1
+    	 leave_pair: true
+    	 merge_type: AVERAGE
+    	 max: 9
+    	 breeding: true
+	 Enabled Worlds(none by default): 
+	   - skyworld
+	   - SomeRandomWorldHere
+	   
 ===== <New Section> =====
 
