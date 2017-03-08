@@ -1,5 +1,8 @@
 # If you edit this file, please be sure whatever you're adding or editing is in the appropriate
-# section. If no section exists for it, make one, but only if it's really needed etc.
+# section. If no section exists for it, make one, but only if it's really needed etc. Edit: also
+# please be sure if you create/edit a secion and you use pronouns like "I" etc., put an identifier
+# tag of who you are so it's not confusing who is "speaking".
+# Ex. I[Brian_Entei] typed this sentence and I hope you read it!
 
 ===== Server plugin related issues =====
 
