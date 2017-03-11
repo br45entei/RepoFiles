@@ -67,5 +67,79 @@ I want to replace the mergedmob plugin that is already loaded on the server, bec
 	   - skyworld
 	   - SomeRandomWorldHere
 	   
+===== Tokens Related =====
+Not publicy talking about ideas yet, but leaving a link here: https://www.spigotmc.org/resources/mysql-tokens.7535/
+	another link, just in case: https://github.com/greatman/craftconomy3
+
+===== EggIncubator =====
+We need to make this plugins work with luckperms please. ty. https://www.spigotmc.org/resources/egg-incubator-pokemon-go.36149/
+
+===== Titles =====
+-----Talabrek-----
+I think we need to make some changes to the title plugin. I know Jo was working on it but I want to post some info
+here to detail what I think would be good. 
+
+First, I think we should have a GUI interface that players can use to view and select titles. In addition to viewing 
+titles that they already have, this could be used to let players see which server titles they can work to obtain, 
+giving players a goal to work towards. The title would keep track of the following:
+
+Title name 
+Actual title (how it looks in chat)
+Status (locked/unlocked)
+Description
+Where to obtain (if not unlocked)
+Date obtained (if unlocked)
+Additional Rewards (we could give out secondary prizes when players unlock a title)
+Type (prefix, suffix)
+Category (public, custom)
+
+For the category, public titles would display to all players whether they are locked or unlocked. Custom titles would
+only display if unlocked (only meant for the player that it was created for).
+
+So an example of what it would like look in the GUI:
+{
+Prefix Title: [Ninja]
+LOCKED
+
+Awarded for completing the Ninja
+Parkour course.
+
+Where to unlock:
+Lobby Server (/lobby)
+
+Additional reward(s) for unlocking:
++10 tokens
+}
+
+{
+Ninja [Ninja]
+UNLOCKED
+
+Awarded for completing the Ninja
+Parkour course.
+
+Obtained: 10/8/2015
+
+Click here or use /title ninja to
+set this as your prefix title.
+}
+
+Another thing is to add the ability for players to have suffix titles. While prefixes are like a tag
+for the player, suffixes would be attached to their name like:
+
+Talabrek, Zombie Slayer - Talabrek, Master Miner - Talabrek, Assassin
+
+Or like a last name (we could sell custom ones in the shop and let players make their own):
+
+Talabrek Shadowhunter
+
+So it would be formatted like: [Owner]Talabrek Shadowhunter > Hey guys!
+
+For staff we would either need to add a fixed tag to the end of the name that displays along with the 
+suffix (I think we can do this with DeluxeChat) or have the plugin append it. So: 
+
+[Owner]Talabrek Shadowhunter(Owner)
+-----------
+
 ===== <New Section> =====
 
